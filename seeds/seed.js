@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const { User, Project } = require('../models');
+const { User, Project, Dashboard } = require('../models');
 
 const userData = require('./userData.json');
 const projectData = require('./projectData.json');
@@ -23,3 +23,5 @@ const seedDatabase = async () => {
 };
 
 seedDatabase();
+
+// What am I missing on this page for Dashboard

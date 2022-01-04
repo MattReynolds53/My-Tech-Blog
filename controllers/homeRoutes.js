@@ -50,6 +50,9 @@ router.get('/project/:id', async (req, res) => {
 });
 
 // Use withAuth middleware to prevent access to route
+
+//If I change /profile to /dhasboard, will it take me to the dhasboard page?
+// If I change model: Project to model: Dashboard in addition to the quesiton above, will that work to display the dashboard page?
 router.get('/profile', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
