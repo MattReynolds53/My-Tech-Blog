@@ -8,9 +8,9 @@ To use this application, the user will need to right-click on the server.js file
 
 ## Important Links
 
-GitHub Repository: 
+GitHub Repository: https://github.com/MattReynolds53/My-Tech-Blog
 
-Deployed Application Link: 
+Deployed Application Link: https://boiling-stream-98053.herokuapp.com/
 
 ## Screenshots
 ![](screenshots/TechBlog1.png)
