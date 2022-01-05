@@ -1,17 +1,14 @@
 [
   {
-    "name": "Music Near Me",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "needed_funding": 5000
+    "name": "My Favorite Laptop",
+    "description": "I just got a new MacBook Pro, and this has to one of my favorite laptops! There is no way I am ever going back to windows."
   },
   {
-    "name": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-    "needed_funding": 10000
+    "name": "Video Game Development",
+    "description": "I hear that there are some great video games coming out in 2022, and I cannot wait to play all the new single player games!"
   },
   {
-    "name": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-    "needed_funding": 800
+    "name": "Data Analysis",
+    "description": "I recently began a job in Data Analysis, and I couldn't be happier. If anyone is considering a job in Data Analysis and knows Python, I highliy encouraged you check out a career in that field!"
   }
 ]

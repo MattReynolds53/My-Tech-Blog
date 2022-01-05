@@ -50,42 +50,17 @@ router.get('/project/:id', async (req, res) => {
 });
 
 // Use withAuth middleware to prevent access to route
-
-//If I change /profile to /dhasboard, will it take me to the dhasboard page?
-// If I change model: Project to model: Dashboard in addition to the quesiton above, will that work to display the dashboard page?
-
-// router.get('/profile', withAuth, async (req, res) => {
-//   try {
-//     // Find the logged in user based on the session ID
-//     const userData = await User.findByPk(req.session.user_id, {
-//       attributes: { exclude: ['password'] },
-//       include: [{ model: Project }],
-//     });
-
-//     const user = userData.get({ plain: true });
-
-//     res.render('profile', {
-//       ...user,
-//       logged_in: true
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
-
-// My attempt at creating a /dashboard route
-router.get('/dashboard', withAuth, async (req, res) => {
+router.get('/profile', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      // I am not sure what to do with the following line of code or how to change it to fit the dhasboard requirements
       include: [{ model: Project }],
     });
 
     const user = userData.get({ plain: true });
-    // Changed the following line to 'dashboard', but im not sure if I need to change something in another file to correspond with this code
-    res.render('dashboard', {
+
+    res.render('profile', {
       ...user,
       logged_in: true
     });
