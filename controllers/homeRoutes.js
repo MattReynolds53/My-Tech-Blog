@@ -45,8 +45,8 @@ router.get('/blogPost/:id', async (req, res) => {
     });
 
 
-
     const blogPost = blogPostData.get({ plain: true });
+
     const commentData = await Comment.findAll({
       include: [
         {
