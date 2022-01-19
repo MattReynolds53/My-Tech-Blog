@@ -11,8 +11,12 @@ router.get('/', async (req, res) => {
           model: User,
           attributes: ['name'],
         },
+        {
+          model: Comment,
+        },
       ],
     });
+    console.log(blogPostData);
 
     // Serialize data so the template can read it
     const blogPosts = blogPostData.map((blogPost) =>
