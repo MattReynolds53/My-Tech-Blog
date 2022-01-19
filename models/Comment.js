@@ -7,11 +7,20 @@ Comment.init(
   {
     body: {
       type: DataTypes.STRING,
-      allowNull: false
-    }
+      allowNull: false,
+    },
+    blog_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
   },
+
   {
-    sequelize
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'comment',
   }
 );
 
