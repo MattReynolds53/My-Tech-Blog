@@ -9,18 +9,18 @@ Comment.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    blog_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
+    // blog_id: {
+    //   type: DataTypes.INTEGER,
+    //   allowNull: false,
+    // },
   },
 
   {
     sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
-    modelName: 'comment',
+    // timestamps: false,
+    // freezeTableName: true,
+    // underscored: true,
+    // modelName: 'comment',
   }
 );
 
