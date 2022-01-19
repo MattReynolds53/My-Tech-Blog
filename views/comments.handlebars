@@ -11,14 +11,14 @@
     </div>
   </article>
 
-  {{#if post.Comments}}
+  {{#if comments.length}}
     <section class="card">
       <div class="card-header">
         <h3>Comments</h3>
       </div>
 
       <div class="card-body">
-        {{#each post.Comments}}
+        {{#each comments as |comment|}}
           <div>
             <p>
               {{body}}
